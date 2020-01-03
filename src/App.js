@@ -5,10 +5,9 @@ import { generatePalette } from './colorHepler';
 
 class App extends Component {
   render() {
-    console.log(generatePalette(seedColors[4]));
     return (
-      <div className="App">
-        <Palette {...seedColors[2]} />
+      <div className="App" >
+        <Palette palette={generatePalette(seedColors[4])} />
       </div>
     );
   }
