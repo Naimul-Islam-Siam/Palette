@@ -36,7 +36,7 @@ class Navbar extends Component {
       return (
          <header className="Navbar">
             <div className="logo">
-               <Link exact to="/" style={{ textDecoration: "none", color: "black" }}>Palette</Link>
+               <Link to="/" style={{ textDecoration: "none", color: "black" }}>Palette</Link>
             </div>
 
             <div className="slider-container">

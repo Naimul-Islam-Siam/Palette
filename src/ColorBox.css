@@ -122,3 +122,11 @@
    text-align: center;
    font-size: 13px;
 }
+
+.dark-text {
+   color: rgba(0, 0, 0, 0.8);
+}
+
+.light-text {
+   color: white;
+}
