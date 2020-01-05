@@ -41,12 +41,12 @@ class PaletteList extends Component {
          <div className={classes.root}>
             <div className={classes.container}>
                <nav className={classes.nav}>
-                  <Link exact to="/" style={{ color: "white", textDecoration: "none" }} ><h1>Palette</h1></Link>
+                  <Link to="/" style={{ color: "white", textDecoration: "none" }} ><h1>Palette</h1></Link>
                </nav>
 
                <div className={classes.palettes}>
                   {palettes.map(palette => (
-                     <Link to={`/palette/${palette.id}`} style={{ textDecoration: "none" }}>
+                     <Link to={`/palette/${palette.id}`} style={{ textDecoration: "none" }} key={palette.paletteName}>
                         <MiniPalette {...palette} />
                      </Link>
                   ))}

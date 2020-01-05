@@ -32,7 +32,3 @@ class App extends Component {
 }
 
 export default App;
-
-{/* <div className="App" >
-  <Palette palette={generatePalette(seedColors[3])} />
-</div> */}
