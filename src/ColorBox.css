@@ -118,19 +118,6 @@
 }
 
 /* more button */
-.see-more {
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   background-color: rgba(255, 255, 255, 0.3);
-   color: white;
-   border: none;
-   line-height: 30px;
-   width: 60px;
-   height: 30px;
-   text-align: center;
-   font-size: 13px;
-}
 
 .dark-text {
    color: rgba(0, 0, 0, 0.8);
