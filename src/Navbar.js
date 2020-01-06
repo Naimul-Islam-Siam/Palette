@@ -30,7 +30,7 @@ class Navbar extends Component {
    }
 
    render() {
-      const { level, changeLevel } = this.props;
+      const { level, changeLevel, changeFormat, isSingleColor } = this.props;
       const { format } = this.state;
 
       return (
@@ -39,17 +39,20 @@ class Navbar extends Component {
                <Link to="/" style={{ textDecoration: "none", color: "black" }}>Palette</Link>
             </div>
 
-            <div className="slider-container">
-               <span>Level: {level}</span>
-               <div className="slider">
-                  <Slider
-                     defaultValue={level}
-                     min={100} //minimum level value
-                     max={900} //maximum level value
-                     step={100} //interval value
-                     onAfterChange={changeLevel} />
+            {!isSingleColor &&
+               <div className="slider-container">
+                  <span>Level: {level}</span>
+                  <div className="slider">
+                     <Slider
+                        defaultValue={level}
+                        min={100} //minimum level value
+                        max={900} //maximum level value
+                        step={100} //interval value
+                        onAfterChange={changeLevel}
+                     />
+                  </div>
                </div>
-            </div>
+            }
 
             <div className="select-container">
                <Select value={format} onChange={this.handleChange}>
