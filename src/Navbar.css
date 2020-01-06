@@ -30,7 +30,12 @@
 }
 
 .rc-slider-rail {
-   height: 8px;
+   height: 10px;
+}
+
+.rc-slider-track:hover,
+.rc-slider-rail:hover {
+   cursor: pointer;
 }
 
 .rc-slider-handle,
@@ -39,7 +44,7 @@
 .rc-slider-handle:hover {
    background-color: green;
    outline: none;
-   border: 2px solid green;
+   border: 8px solid green;
    box-shadow: none;
    width: 13px;
    height: 13px;

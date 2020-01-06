@@ -9,7 +9,8 @@ const styles = {
       height: "100vh",
       display: "flex",
       justifyContent: "center",
-      alignItems: "flex-start"
+      alignItems: "flex-start",
+      overflowY: "scroll"
    },
    container: {
       width: "50%",
